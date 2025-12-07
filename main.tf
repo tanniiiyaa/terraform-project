@@ -8,7 +8,7 @@ resource "aws_instance" "studentapp" {
     #!/bin/bash
      sudo apt update -y
 
-     git clone https://github.com/DIVATEe/studentapp.git
+     git clone https://github.com/tanniiiyaa/terraform-project.git
      cd studentapp/
 
      chmod 700 dockerinstall.sh
@@ -16,4 +16,8 @@ resource "aws_instance" "studentapp" {
 
      docker compose up -d
      EOT
+}
+
+output "studentapp_publicip" {
+  value = aws_instance.studentapp.public_ip
 }
