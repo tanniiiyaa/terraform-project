@@ -2,7 +2,8 @@ variable "studentapp_instance_type" {
   default = "t3.micro"
 }
 variable "studentapp_ami" {
-  default = "ami-0d2aad4794ad02001"
+  default = "ami-0fa91bc90632c73c9"
+  
 }
 variable "studentapp_key_name" {
   default = "nana"
