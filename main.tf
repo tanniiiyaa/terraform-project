@@ -8,8 +8,8 @@ resource "aws_instance" "studentapp" {
     #!/bin/bash
      sudo apt update -y
 
-     git clone https://github.com/tanniiiyaa/studentappp.git
-     cd studentappp/
+     git clone https://github.com/DIVATEe/studentapp.git
+     cd studentapp/
 
      chmod 700 dockerinstall.sh
      sh dockerinstall.sh
