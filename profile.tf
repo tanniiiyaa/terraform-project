@@ -1,4 +1,4 @@
 provider "aws" {
-  region = ap-south-1
-  profile = configs
+      region = "eu-north-1"
+      profile = "configs"
 }
